@@ -1,0 +1,20 @@
+Setting up a Maven Project:
+$ mvn archetype:generate \
+-DarchetypeGroupId=org.apache.kafka \
+-DarchetypeArtifactId=streams-quickstart-java \
+-DarchetypeVersion=4.2.0 \
+-DgroupId=streams.examples \
+-DartifactId=streams-quickstart \
+-Dversion=0.1 \
+-Dpackage=myapps
+
+Writing a first Streams application: Pipe
+Create a new Java Class Pipe
+
+and edit it 
+
+to compile and execute:
+$ mvn clean package
+$ mvn exec:java -Dexec.mainClass=myapps.Pipe
+
+the same for the others
